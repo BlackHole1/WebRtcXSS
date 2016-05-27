@@ -1,6 +1,7 @@
 <?php
 return array(
 	'URL_MODEL' => 2,
+	
 	'DB_TYPE' => 'mysql',
 	'DB_HOST' => 'localhost',
 	'DB_NAME' => 'webrtcxss',
