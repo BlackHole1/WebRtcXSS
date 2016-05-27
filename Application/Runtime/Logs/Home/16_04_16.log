@@ -1,0 +1,996 @@
+[ 2016-04-16T11:26:51+08:00 ] 127.0.0.1 /RootApi/findProject/id/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `webrtc_project` WHERE ( id="56" ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `webrtc_survivaliplist` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `webrtc_survivaliplist` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `webrtc_ipdatalist` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `webrtc_ipdatalist` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencecmsip` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `webrtc_existencecmsip` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencevul` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `webrtc_existencevul` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-04-16T11:26:56+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T11:26:58+08:00 ] 127.0.0.1 /RootApi/findProject/id/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `webrtc_project` WHERE ( id="56" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `webrtc_survivaliplist` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `webrtc_survivaliplist` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `webrtc_ipdatalist` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `webrtc_ipdatalist` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencecmsip` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `webrtc_existencecmsip` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencevul` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `webrtc_existencevul` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-16T11:29:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T11:30:00+08:00 ] 127.0.0.1 /Public/js/library/iconfont.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-04-16T11:30:28+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T11:30:32+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T11:30:48+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T11:30:51+08:00 ] 127.0.0.1 /RootApi/findProject/id/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `webrtc_project` WHERE ( id="56" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `webrtc_survivaliplist` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `webrtc_survivaliplist` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `webrtc_ipdatalist` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `webrtc_ipdatalist` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencecmsip` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `webrtc_existencecmsip` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencevul` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `webrtc_existencevul` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-16T11:30:51+08:00 ] 127.0.0.1 /Public/css/library/iconfont.woff?t=1460776809
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-04-16T11:30:51+08:00 ] 127.0.0.1 /Public/css/library/iconfont.ttf?t=1460776809
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-04-16T11:32:08+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T11:32:11+08:00 ] 127.0.0.1 /RootApi/findProject/id/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `webrtc_project` WHERE ( id="56" ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `webrtc_survivaliplist` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `webrtc_survivaliplist` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `webrtc_ipdatalist` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `webrtc_ipdatalist` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencecmsip` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `webrtc_existencecmsip` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencevul` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `webrtc_existencevul` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-16T11:32:11+08:00 ] 127.0.0.1 /Public/css/.../fonts/iconfont.woff?t=1460776809
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-04-16T11:32:11+08:00 ] 127.0.0.1 /Public/css/.../fonts/iconfont.ttf?t=1460776809
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-04-16T11:32:31+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T11:32:33+08:00 ] 127.0.0.1 /RootApi/findProject/id/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `webrtc_project` WHERE ( id="56" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `webrtc_survivaliplist` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `webrtc_survivaliplist` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `webrtc_ipdatalist` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `webrtc_ipdatalist` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencecmsip` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `webrtc_existencecmsip` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencevul` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `webrtc_existencevul` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-16T12:47:51+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T12:47:52+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T18:06:18+08:00 ] 127.0.0.1 /RootApi/findProject/id/56
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0910s ]
+SQL: SELECT * FROM `webrtc_project` WHERE ( id="56" ) LIMIT 1   [ RunTime:0.1930s ]
+SQL: SHOW COLUMNS FROM `webrtc_survivaliplist` [ RunTime:0.1200s ]
+SQL: SELECT * FROM `webrtc_survivaliplist` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `webrtc_ipdatalist` [ RunTime:0.0720s ]
+SQL: SELECT * FROM `webrtc_ipdatalist` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencecmsip` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `webrtc_existencecmsip` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencevul` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `webrtc_existencevul` WHERE ( onlystring='45a6115efb584b73b80d27c8869d00d0' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-16T18:31:57+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.1000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.036002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.036002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.025001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.025001s ]
+
+[ 2016-04-16T18:32:09+08:00 ] 127.0.0.1 /RootApi/addProject
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0050s ]
+SQL: INSERT INTO `webrtc_project` (`name`,`note`,`onlystring`,`create_time`) VALUES ('5','无备注','4e09a96fa08b1aa2c4e41ee382ecf900','2016-04-16 18:32:08') [ RunTime:0.1260s ]
+
+[ 2016-04-16T18:32:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T18:32:15+08:00 ] 127.0.0.1 /RootApi/findProject/id/57
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `webrtc_project` WHERE ( id="57" ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-16T18:32:51+08:00 ] 127.0.0.1 /Api/survivalIp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `webrtc_survivaliplist` [ RunTime:0.0100s ]
+SQL: INSERT INTO `webrtc_survivaliplist` (`outside_ip`,`survival_ip`,`onlystring`,`create_time`) VALUES ('127.0.0.1','192.168.1.104','4e09a96fa08b1aa2c4e41ee382ecf900','2016-04-16 18:32:51') [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-16T18:32:53+08:00 ] 127.0.0.1 /Api/stage/onlystring/4e09a96fa08b1aa2c4e41ee382ecf900/updata/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0040s ]
+SQL: UPDATE `webrtc_project` SET `stage`='1' WHERE ( onlystring="4e09a96fa08b1aa2c4e41ee382ecf900" ) [ RunTime:0.1030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T18:41:44+08:00 ] 127.0.0.1 /Api/survivalPortIp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_ipdatalist` [ RunTime:0.0400s ]
+SQL: INSERT INTO `webrtc_ipdatalist` (`survival_ip`,`onlystring`,`create_time`) VALUES ('192.168.1.100-192.168.1.103','4e09a96fa08b1aa2c4e41ee382ecf900','2016-04-16 18:41:44') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `webrtc_cmspath` [ RunTime:0.0060s ]
+SQL: SELECT `cms`,`path` FROM `webrtc_cmspath`  [ RunTime:0.0230s ]
+
+[ 2016-04-16T18:41:45+08:00 ] 127.0.0.1 /Api/stage/onlystring/4e09a96fa08b1aa2c4e41ee382ecf900/updata/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0060s ]
+SQL: UPDATE `webrtc_project` SET `stage`='2' WHERE ( onlystring="4e09a96fa08b1aa2c4e41ee382ecf900" ) [ RunTime:0.0150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T18:41:46+08:00 ] 127.0.0.1 /Api/survivalCmsIp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencecmsip` [ RunTime:0.0640s ]
+SQL: INSERT INTO `webrtc_existencecmsip` (`inner_ip`,`cms`,`onlystring`,`create_time`) VALUES ('192.168.1.103','Discuz','4e09a96fa08b1aa2c4e41ee382ecf900','2016-04-16 18:41:46') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `webrtc_cmsvul` [ RunTime:0.0570s ]
+SQL: SELECT `vulinfo` FROM `webrtc_cmsvul` WHERE ( cms="Discuz" ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2016-04-16T18:41:47+08:00 ] 127.0.0.1 /Api/stage/onlystring/4e09a96fa08b1aa2c4e41ee382ecf900/updata/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0060s ]
+SQL: UPDATE `webrtc_project` SET `stage`='3' WHERE ( onlystring="4e09a96fa08b1aa2c4e41ee382ecf900" ) [ RunTime:0.0040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T18:41:49+08:00 ] 127.0.0.1 /Api/existenceVul
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencevul` [ RunTime:0.0060s ]
+SQL: INSERT INTO `webrtc_existencevul` (`cms`,`vulip`,`onlystring`,`create_time`) VALUES ('Discuz','192.168.1.103','4e09a96fa08b1aa2c4e41ee382ecf900','2016-04-16 18:41:49') [ RunTime:0.0500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-16T18:41:50+08:00 ] 127.0.0.1 /Api/stage/onlystring/4e09a96fa08b1aa2c4e41ee382ecf900/updata/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0220s ]
+SQL: UPDATE `webrtc_project` SET `stage`='4' WHERE ( onlystring="4e09a96fa08b1aa2c4e41ee382ecf900" ) [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T19:25:46+08:00 ] 127.0.0.1 /RootApi/addProject
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.1680s ]
+SQL: INSERT INTO `webrtc_project` (`name`,`note`,`onlystring`,`create_time`) VALUES ('test','无备注','894a958513bcfacd27062ebaf849f262','2016-04-16 19:25:45') [ RunTime:0.0010s ]
+
+[ 2016-04-16T19:26:57+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T19:27:01+08:00 ] 127.0.0.1 /RootApi/findProject/id/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `webrtc_project` WHERE ( id="53" ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-16T19:27:02+08:00 ] 127.0.0.1 /RootApi/delProjectId
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `webrtc_ipdatalist` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencevul` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencecmsip` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `webrtc_project` WHERE ( id="53" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: DELETE FROM `webrtc_project` WHERE ( id="53" ) [ RunTime:0.0250s ]
+SQL: DELETE FROM `webrtc_ipdatalist` WHERE ( onlystring="43d143d5b2153ac2fbffe7b6a6868adc" ) [ RunTime:0.0000s ]
+SQL: DELETE FROM `webrtc_existencevul` WHERE ( onlystring="43d143d5b2153ac2fbffe7b6a6868adc" ) [ RunTime:0.0010s ]
+SQL: DELETE FROM `webrtc_existencecmsip` WHERE ( onlystring="43d143d5b2153ac2fbffe7b6a6868adc" ) [ RunTime:0.0000s ]
+
+[ 2016-04-16T19:27:04+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T19:27:10+08:00 ] 127.0.0.1 /RootApi/addProject
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0080s ]
+SQL: INSERT INTO `webrtc_project` (`name`,`note`,`onlystring`,`create_time`) VALUES ('test','无备注','aaf1cdd724282e253ce7e16e81ab8f3e','2016-04-16 19:27:09') [ RunTime:0.0000s ]
+
+[ 2016-04-16T19:28:11+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-04-16T19:28:14+08:00 ] 127.0.0.1 /RootApi/findProject/id/59
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `webrtc_project` WHERE ( id="59" ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-04-16T19:28:16+08:00 ] 127.0.0.1 /RootApi/delProjectId
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `webrtc_ipdatalist` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencevul` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencecmsip` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `webrtc_project` WHERE ( id="59" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: DELETE FROM `webrtc_project` WHERE ( id="59" ) [ RunTime:0.0010s ]
+SQL: DELETE FROM `webrtc_ipdatalist` WHERE ( onlystring="aaf1cdd724282e253ce7e16e81ab8f3e" ) [ RunTime:0.0010s ]
+SQL: DELETE FROM `webrtc_existencevul` WHERE ( onlystring="aaf1cdd724282e253ce7e16e81ab8f3e" ) [ RunTime:0.0000s ]
+SQL: DELETE FROM `webrtc_existencecmsip` WHERE ( onlystring="aaf1cdd724282e253ce7e16e81ab8f3e" ) [ RunTime:0.0010s ]
+
+[ 2016-04-16T19:28:18+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T19:28:21+08:00 ] 127.0.0.1 /RootApi/findProject/id/58
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `webrtc_project` WHERE ( id="58" ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-04-16T19:28:22+08:00 ] 127.0.0.1 /RootApi/delProjectId
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `webrtc_ipdatalist` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencevul` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencecmsip` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `webrtc_project` WHERE ( id="58" ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: DELETE FROM `webrtc_project` WHERE ( id="58" ) [ RunTime:0.0010s ]
+SQL: DELETE FROM `webrtc_ipdatalist` WHERE ( onlystring="894a958513bcfacd27062ebaf849f262" ) [ RunTime:0.0010s ]
+SQL: DELETE FROM `webrtc_existencevul` WHERE ( onlystring="894a958513bcfacd27062ebaf849f262" ) [ RunTime:0.0000s ]
+SQL: DELETE FROM `webrtc_existencecmsip` WHERE ( onlystring="894a958513bcfacd27062ebaf849f262" ) [ RunTime:0.0000s ]
+
+[ 2016-04-16T19:28:24+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T19:28:30+08:00 ] 127.0.0.1 /RootApi/addProject
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0110s ]
+SQL: INSERT INTO `webrtc_project` (`name`,`note`,`onlystring`,`create_time`) VALUES ('test','无备注','f92d38731e6c606d75965ce71f4a3e83','2016-04-16 19:28:29') [ RunTime:0.0010s ]
+
+[ 2016-04-16T19:28:58+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-16T19:29:02+08:00 ] 127.0.0.1 /RootApi/addProject
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0040s ]
+SQL: INSERT INTO `webrtc_project` (`name`,`note`,`onlystring`,`create_time`) VALUES ('1','无备注','d39d760056935deeecc782e943409437','2016-04-16 19:29:01') [ RunTime:0.0000s ]
+
+[ 2016-04-16T19:29:51+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T19:29:56+08:00 ] 127.0.0.1 /RootApi/addProject
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0050s ]
+SQL: INSERT INTO `webrtc_project` (`name`,`note`,`onlystring`,`create_time`) VALUES ('2','无备注','2d211bc7172941daea18ce27b53bba8e','2016-04-16 19:29:55') [ RunTime:0.0010s ]
+
+[ 2016-04-16T19:29:58+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T19:30:04+08:00 ] 127.0.0.1 /RootApi/addProject
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0250s ]
+SQL: INSERT INTO `webrtc_project` (`name`,`note`,`onlystring`,`create_time`) VALUES ('test','无备注','6e494aadb241eb74bcba81cd60fea695','2016-04-16 19:30:03') [ RunTime:0.0010s ]
+
+[ 2016-04-16T19:30:18+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T19:30:22+08:00 ] 127.0.0.1 /RootApi/findProject/id/57
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `webrtc_project` WHERE ( id="57" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `webrtc_survivaliplist` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `webrtc_survivaliplist` WHERE ( onlystring='4e09a96fa08b1aa2c4e41ee382ecf900' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `webrtc_ipdatalist` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `webrtc_ipdatalist` WHERE ( onlystring='4e09a96fa08b1aa2c4e41ee382ecf900' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencecmsip` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `webrtc_existencecmsip` WHERE ( onlystring='4e09a96fa08b1aa2c4e41ee382ecf900' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencevul` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `webrtc_existencevul` WHERE ( onlystring='4e09a96fa08b1aa2c4e41ee382ecf900' ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-16T19:31:12+08:00 ] 127.0.0.1 /RootApi/findProject/id/63
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `webrtc_project` WHERE ( id="63" ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-04-16T19:31:48+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: projectsnfo E:\WWW\webrtcxss\Application\Home\Controller\IndexController.class.php 第 30 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T19:37:07+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: projectnfo E:\WWW\webrtcxss\Application\Home\Controller\IndexController.class.php 第 30 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T19:37:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: projectnfo E:\WWW\webrtcxss\Application\Home\Controller\IndexController.class.php 第 30 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-16T19:37:17+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `webrtc_project` ORDER BY create_time DESC  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-16T19:37:27+08:00 ] 127.0.0.1 /RootApi/findProject/id/57
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `webrtc_project` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `webrtc_project` WHERE ( id="57" ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `webrtc_survivaliplist` [ RunTime:0.0790s ]
+SQL: SELECT * FROM `webrtc_survivaliplist` WHERE ( onlystring='4e09a96fa08b1aa2c4e41ee382ecf900' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `webrtc_ipdatalist` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `webrtc_ipdatalist` WHERE ( onlystring='4e09a96fa08b1aa2c4e41ee382ecf900' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencecmsip` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `webrtc_existencecmsip` WHERE ( onlystring='4e09a96fa08b1aa2c4e41ee382ecf900' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `webrtc_existencevul` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `webrtc_existencevul` WHERE ( onlystring='4e09a96fa08b1aa2c4e41ee382ecf900' ) LIMIT 1   [ RunTime:0.0000s ]
+

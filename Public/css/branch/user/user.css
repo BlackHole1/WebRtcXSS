@@ -1,0 +1,157 @@
+@charset "utf-8";
+body {
+  font-size: 14px;
+}
+.userheader .col-md-2 {
+  padding-bottom: 20px;
+}
+.userheader .col-md-2 img {
+  margin-right: 10px;
+  width: 120px;
+  -webkit-border-radius: 500px;
+  -ms-border-radius: 500px;
+  -moz-border-radius: 500px;
+  border-radius: 500px;
+}
+.userheader .col-md-7 span {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #337ab7;
+}
+.userheader .col-md-7 tbody tr td {
+  font-size: 15px;
+}
+.userheader .col-md-7 tbody tr td:last-of-type {
+  color: #337ab7;
+}
+.userheader .col-md-3 {
+  margin-top: 43px;
+}
+.userheader .col-md-3 .btn-group,
+.userheader .col-md-3 > a {
+  float: right;
+}
+.userheader .col-md-3 > a {
+  margin-right: 10px;
+}
+.articleList li {
+  list-style-type: none;
+}
+.articleList li a {
+  display: block;
+  padding: 1em;
+  padding-top: 0.1em;
+  line-height: 42px;
+  border: 1px solid #fff;
+}
+.articleList li a:hover {
+  transition: border 0.1s ease-in;
+  border: 1px solid #337ab7;
+}
+.articleList li a .item-card {
+  width: 100%;
+  height: 34px;
+  background: #fff;
+  padding: 4px;
+  padding-left: 10px;
+}
+.articleList li a .item-card > span:first-of-type {
+  float: left;
+}
+.articleList li a .item-card > span:not(:first-of-type) {
+  float: right;
+}
+.articleList li a .item-card > span:nth-of-type(3) {
+  color: #333;
+  margin-right: 10px;
+}
+.articleList li a .item-card > span:nth-of-type(3)::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #f1e05a;
+  -webkit-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+}
+.articleList li a .item-card > span:nth-of-type(2) {
+  color: #9A9A9A;
+}
+.privateMessageList li {
+  list-style-type: none;
+}
+.privateMessageList li a {
+  display: inline-flex;
+  padding: 1em;
+  padding-top: 0.1em;
+  line-height: 42px;
+  border: 1px solid #fff;
+  width: 94%;
+}
+.privateMessageList li a:hover {
+  transition: border 0.1s ease-in;
+  border: 1px solid #337ab7;
+}
+.privateMessageList li a .item-card {
+  width: 100%;
+  height: 34px;
+  background: #fff;
+  padding: 4px;
+  padding-left: 10px;
+}
+.privateMessageList li a .item-card > span:first-of-type,
+.privateMessageList li a .item-card small {
+  float: left;
+}
+.privateMessageList li a .item-card > small {
+  color: #777;
+}
+.privateMessageList li a .item-card > span:nth-of-type(2) {
+  float: right;
+  color: #333;
+  margin-right: 10px;
+}
+.privateMessageList li button {
+  display: inline-flex;
+  outline: none !important;
+}
+#ViewPrivateMessage {
+  padding: 10px;
+}
+#ViewPrivateMessage .panel-default {
+  border-color: transparent;
+}
+#ViewPrivateMessage .panel-default .panel-heading {
+  border-color: transparent;
+}
+.table > thead > tr > th {
+  border-bottom: none;
+}
+.table > thead > tr > th:first-of-type {
+  width: 18%;
+}
+.table > tbody tr td {
+  border-top: 1px solid rgba(221, 221, 221, 0.16);
+}
+.table > tbody .thumbnail {
+  margin-bottom: 10px;
+  padding-top: 18px;
+}
+.table > tbody .thumbnail:hover,
+.table > tbody .thumbnail:focus {
+  text-decoration: none;
+}
+.table > tbody .thumbnail img {
+  width: 9em;
+}
+.table > tbody .thumbnail .caption {
+  text-align: center;
+}
+.table > tbody .thumbnail .caption h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #337ab7;
+}

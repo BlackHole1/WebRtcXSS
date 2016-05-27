@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>WebrtcXss</title>
+	<import type='css' file="css.library.bootstrap.bootstrap,css.library.sweetalert,css.library.iconfont,css.base.base"/>
+</head>
+<body>
+<include file="Public/html/nav.html" />
+<div class="container">
+<if condition="count($projects) gt 0">
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th>项目</th>
+				<th>名称</th>
+				<th>备注</th>
+				<th>现阶段</th>
+				<th>时间</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<volist name="projects" id="vo">
+			<tr>
+				<th scope="row"></th>
+				<td  data-toggle="modal" data-target=".bs-example-modal-lg">{$vo.name}</td>
+				<td  data-toggle="modal" data-target=".bs-example-modal-lg">{$vo.note}</td>
+				<td  data-toggle="modal" data-target=".bs-example-modal-lg">{$vo.stage}</td>
+				<td  data-toggle="modal" data-target=".bs-example-modal-lg">{$vo.create_time}</td>
+				<td><a href="#delProject" data-id="{$vo.id}">删除</a></td>
+			</tr>
+			</volist>
+		</tbody>
+	</table>
+<else />
+	<div class="jumbotron">
+		<h1>Don't Have Projects</h1>
+		<p>点击下面的按钮建立起自己第一个项目吧</p>
+		<p><a class="btn btn-primary btn-lg" href="#addProject" role="button">Fuck Me</a></p>
+	</div>
+</if>
+</div>
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="gridSystemModalLabel">漏洞详情</h4>
+			</div>
+			<div class="modal-body">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+<import file="js.library.jquery,js.library.bootstrap,js.library.sweetalert,js.base.base"/>
+</html>

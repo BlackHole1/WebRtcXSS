@@ -1,0 +1,60 @@
+@charset "utf-8";
+.row .col-md-9 .article-list .article .header-info .title {
+  font-size: 25px;
+}
+.row .col-md-9 .article-list .article .header-info .author ul {
+  margin-bottom: 0px;
+}
+.row .col-md-9 .article-list .article .header-info .author li {
+  float: left;
+  margin-right: 10px;
+}
+.row .col-md-9 .article-list .article .header-info .author li span:first-of-type {
+  top: 1.5px;
+  color: #777777;
+}
+.row .col-md-9 .article-list .article .body {
+  margin-top: 5px;
+}
+.row .col-md-9 .article-list .article .body p {
+  line-height: 1.9;
+}
+.row .col-md-9 .more-article {
+  text-align: center;
+}
+.row .col-md-9 .more-article button {
+  height: 46px;
+  width: 118px;
+  border: 2px #428bca solid;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  -webkit-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+  outline: none;
+  color: #2a6496;
+  background-color: rgba(255, 255, 255, 0);
+}
+.row .col-md-9 .more-article button:hover {
+  background-color: #428bca;
+  color: #ffffff;
+}
+.row .col-md-9 .more-article button:focus {
+  background-color: #CACACA;
+  color: black;
+  border: none;
+}
+.row .col-md-3 .hot-article span,
+.row .col-md-3 .article-category span {
+  display: inline-block;
+  margin-bottom: -2px;
+  padding-bottom: 5px;
+  border-bottom: solid 2px #2a2c2e;
+  font-size: 18px;
+}
+.row .col-md-3 .hot-article li,
+.row .col-md-3 .article-category li {
+  margin-top: 5px;
+}

@@ -1,0 +1,40 @@
+@charset "utf-8";
+.table > tbody > tr > th,
+.table > tbody > tr > td {
+  border-top: none;
+  vertical-align: inherit;
+}
+.table > tbody > tr > th {
+  width: 10%;
+}
+.table > tbody > tr > td .form-control {
+  display: inline-block;
+  padding: 2px 8px;
+  width: 72%;
+}
+.table > tbody > tr > td small {
+  display: inline-block;
+}
+#articleInfo {
+  display: inline-block;
+}
+.btn-group-justified {
+  width: 30%;
+}
+.btn-group-justified button:active,
+.btn-group-justified button:focus {
+  background-color: #E6E6E6 !important;
+}
+.color-primary {
+  margin-bottom: 20px;
+}
+.progress {
+  height: 26px;
+  width: 67%;
+  display: inline-flex;
+  vertical-align: super;
+}
+.progress .sr-only {
+  position: relative;
+  vertical-align: sub;
+}
