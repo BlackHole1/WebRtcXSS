@@ -13,7 +13,7 @@
 * 数据库配置在`/Application/Home/Conf/config.php`里
 
 * 如果出现`ERROR 1067 (42000) at line 22: Invalid default value for ‘create_time’`错误
-  <p>请移步[http://blog.csdn.net/xionglang7/article/details/44499307](http://blog.csdn.net/xionglang7/article/details/44499307),是因为`create_time`里的时间全为0导致的</p>
+  <p>请移步 [http://blog.csdn.net/xionglang7/article/details/44499307](http://blog.csdn.net/xionglang7/article/details/44499307) ,是因为`create_time`里的时间全为0导致的</p>
 
 * 如果出现`Undefined class constant ‘MYSQL_ATTR_INIT_COMMAND’`错误
   <p>需要开启PDO扩展</p>
