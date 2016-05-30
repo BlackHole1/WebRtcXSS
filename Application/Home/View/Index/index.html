@@ -8,7 +8,7 @@
 	<import type='css' file="css.library.bootstrap.bootstrap,css.library.sweetalert,css.library.iconfont,css.base.base"/>
 </head>
 <body>
-<include file="Public/html/nav.html" />
+<include file="Common/nav" />
 <div class="container">
 <if condition="count($projects) gt 0">
 	<table class="table table-hover">
@@ -60,5 +60,11 @@
 </div>
 
 </body>
+<script type="text/javascript">
+	addProjectApi = '{:U("Home/RootApi/addProject")}';
+	delProjectApi = '{:U("Home/RootApi/delProjectId")}';
+	findProjectApi = '{:U("Home/RootApi/findProject",array("id"=>""))}';
+
+</script>
 <import file="js.library.jquery,js.library.bootstrap,js.library.sweetalert,js.base.base"/>
 </html>
