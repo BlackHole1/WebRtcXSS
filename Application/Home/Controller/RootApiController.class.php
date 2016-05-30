@@ -167,24 +167,19 @@ function stage(num){
     document.getElementsByTagName("body")[0].appendChild(updataStage);
 }
 WEBRTCJS;
-
-        if(file_put_contents($jsfile, $content)){
-            $projectData->data($project)->add();
+        file_put_contents($file, $content,LOCK_EX);
+        if(file_exists($file)){
             $this->ajaxReturn(array(
                 "typeMsg" => "success",
-                "msgText" => "<script src='".$file."'></script>",
-             ));
+                "msgText" => "<script src='http://$domain/js/$md5string.js'></script>",
+            ));
         }else{
             $this->ajaxReturn(array(
                 "typeMsg" => "error",
                 "msgText" => "添加失败",
-             ));
+            ));
         }
-        //file_put_contents($file, $content,LOCK_EX);
     }
-
-
-
     public function delProjectId(){
         if(I('post.id','','int')  == ""){
             $this->ajaxReturn(array(
