@@ -21,7 +21,7 @@ $("a[href='#addProject']").click(function(){
 			return false;
 		}
 		$.ajax({
-			url: '/RootApi/addProject',
+			url: addProjectApi,
 			type: 'post',
 			dataType: 'json',
 			data: {name: name,note:note},
@@ -48,13 +48,13 @@ $("a[href='#delProject']").click(function(){
 		text: '确认要删除此项目么？',
 		showCancelButton: true,
 		closeOnConfirm: false,
-		confirmButtonText:"添加",
+		confirmButtonText:"删除",
 		cancelButtonText:"取消",
 		showLoaderOnConfirm: true, 
 	},
 	function(){
 		$.ajax({
-			url: '/RootApi/delProjectId',
+			url: delProjectApi,
 			type: 'post',
 			dataType: 'json',
 			data: {id: projectId},
@@ -75,7 +75,7 @@ $("a[href='#delProject']").click(function(){
 })
 $("tbody tr td:not(:last)").click(function(){
 var valId = $(this).parent().find("td:last a").attr("data-id");
-	$.getJSON('/RootApi/findProject/id/' + valId,function(json){
+	$.getJSON(findProjectApi + valId,function(json){
 		if(json.typeMsg == "success"){
 			$(".modal-body").html('\
 				<p>\
