@@ -167,11 +167,12 @@ function stage(num){
     document.getElementsByTagName("body")[0].appendChild(updataStage);
 }
 WEBRTCJS;
-        file_put_contents($file, $content,LOCK_EX);
-        if(file_exists($file)){
+        file_put_contents($jsfile, $content,LOCK_EX);
+        if(file_exists($jsfile)){
+            $projectData->data($project)->add();
             $this->ajaxReturn(array(
                 "typeMsg" => "success",
-                "msgText" => "<script src='http://$domain/js/$md5string.js'></script>",
+                "msgText" => "<script src='$file'></script>",
             ));
         }else{
             $this->ajaxReturn(array(

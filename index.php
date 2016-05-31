@@ -19,6 +19,11 @@ define('APP_DEBUG',True);
 
 // 定义应用目录
 define('APP_PATH','./Application/');
+
+if (!is_file( 'Application/Home/Conf/config.php')) {
+    header('Location: ./install.php');
+    exit;
+}
 //默认模块
 define('BIND_MODULE','Home');
 // 引入ThinkPHP入口文件
