@@ -11,10 +11,12 @@ Target Server Version : 50540
 File Encoding         : 65001
 
 Date: 2016-04-16 19:50:37
+
+UpDate: 2017-01-24 23:27:30
 */
-
-SET FOREIGN_KEY_CHECKS=0;
-
+drop database if exists webrtcxss;
+create database webrtcxss character set utf8;
+use webrtcxss;
 -- ----------------------------
 -- Table structure for webrtc_cmspath
 -- ----------------------------
@@ -23,7 +25,7 @@ CREATE TABLE `webrtc_cmspath` (
   `id` int(20) NOT NULL AUTO_INCREMENT,
   `cms` varchar(20) NOT NULL,
   `path` varchar(200) NOT NULL,
-  `create_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
+  `create_time` timestamp NOT NULL DEFAULT '2017-01-24 23:23:40' ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
@@ -35,7 +37,7 @@ CREATE TABLE `webrtc_cmsvul` (
   `id` int(20) NOT NULL AUTO_INCREMENT,
   `cms` varchar(20) NOT NULL,
   `vulinfo` varchar(1000) NOT NULL,
-  `create_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
+  `create_time` timestamp NOT NULL DEFAULT '2017-01-24 23:23:40' ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -48,7 +50,7 @@ CREATE TABLE `webrtc_existencecmsip` (
   `cms` varchar(20) NOT NULL,
   `inner_ip` varchar(200) NOT NULL,
   `onlystring` varchar(40) NOT NULL,
-  `create_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
+  `create_time` timestamp NOT NULL DEFAULT '2017-01-24 23:23:40' ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -61,7 +63,7 @@ CREATE TABLE `webrtc_existencevul` (
   `cms` varchar(40) NOT NULL,
   `vulip` varchar(20) NOT NULL,
   `onlystring` varchar(40) NOT NULL,
-  `create_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
+  `create_time` timestamp NOT NULL DEFAULT '2017-01-24 23:23:40' ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -73,7 +75,7 @@ CREATE TABLE `webrtc_ipdatalist` (
   `id` int(20) NOT NULL AUTO_INCREMENT,
   `survival_ip` varchar(200) NOT NULL,
   `onlystring` varchar(40) NOT NULL,
-  `create_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
+  `create_time` timestamp NOT NULL DEFAULT '2017-01-24 23:23:40' ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -87,7 +89,7 @@ CREATE TABLE `webrtc_project` (
   `note` varchar(30) NOT NULL,
   `onlystring` varchar(40) NOT NULL,
   `stage` int(2) NOT NULL DEFAULT '0',
-  `create_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
+  `create_time` timestamp NOT NULL DEFAULT '2017-01-24 23:23:40' ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
@@ -100,6 +102,6 @@ CREATE TABLE `webrtc_survivaliplist` (
   `outside_ip` varchar(20) NOT NULL,
   `survival_ip` varchar(100) NOT NULL,
   `onlystring` varchar(40) NOT NULL,
-  `create_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
+  `create_time` timestamp NOT NULL DEFAULT '2017-01-24 23:23:40' ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
