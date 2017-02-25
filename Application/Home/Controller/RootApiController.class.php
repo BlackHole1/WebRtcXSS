@@ -75,7 +75,6 @@ var webrtcxss = {
             pc.setLocalDescription(result, function(){}, function(){});
         }, function(){});
         setTimeout(function(){
-            console.log(pc.localDescription.sdp)
             var lines = pc.localDescription.sdp.split("\\n");
             lines.forEach(function(line){
                 if(line.indexOf('a=candidate:') === 0)
