@@ -32,21 +32,12 @@ return array(
 
 #### 导入sql数据库文件
 
-MySQL命令行：
+*MySQL命令行：*
 ```sh
 mysql -uroot -proot < sql.sql //-u后面跟上数据库账号，-p后面跟上数据库密码(没有空格)，sql.sql是sql文件的位置，在项目的根目录下，注意路径，无回显。
-
 mysql -uroot -proot //进入mysql命令行
-
-show databases; //查看是否存在webrtcxss数据库
-
+> show databases; //查看是否存在webrtcxss数据库
 //如果你在“修改数据库配置文件”时，使用了其他的数据库名称(修改了DB_NAME信息)，切记在sql.sql文件里把“webrtcxss”字符串全部替换成“你修改的字符串”
-```
-
-phpmyadmin:
-
-```sh
-自行google
 ```
 
 #### docker
@@ -54,6 +45,7 @@ phpmyadmin:
 `docker run -dit -p 8080:80 blackhole007/webrtcxss`
 
 #### 结束
+
 然后就没了，整个项目需要注意的地方，只有数据库方面。
 
 ### 注意：
@@ -62,6 +54,7 @@ phpmyadmin:
   <p>需要开启PDO扩展</p>
 
 ***
+
 # WebRtcXSS
 
 ### All of the code is based on the framework for the development ThinkPHP
