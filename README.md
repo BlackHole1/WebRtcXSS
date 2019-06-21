@@ -42,7 +42,7 @@ mysql -uroot -proot //进入mysql命令行
 
 #### docker
 
-`docker run -dit -p 8080:80 blackhole007/webrtcxss`
+`docker run -dit -p 8080:80 blackhole007/webrtcxss sh -c "lnmp start && bash"`
 
 #### 结束
 
@@ -74,6 +74,6 @@ mysql -uroot -proot //进入mysql命令行
 
 #### docker
 
-`docker run -dit -p 8080:80 blackhole007/webrtcxss`
+`docker run -dit -p 8080:80 blackhole007/webrtcxss sh -c "lnmp start && bash"`
 
 > Translation from Google
